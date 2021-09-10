@@ -1,0 +1,148 @@
+
+body{
+    background-color: hsl(283, 39%, 53%) !important;
+}
+
+.outer-form{
+    
+    padding-top: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    
+    box-shadow: 0 2px 5px;
+    
+    /* height: auto; */
+    margin: 0 auto;
+    background-color: #fff;
+    
+    
+   
+}
+
+
+.head{
+background-color: #f7f7f7;
+border-bottom: 1px solid #f0f0f0;
+padding: 20px 40px;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-outer{
+    
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.form-outer label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-outer input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.form-outer.success input{
+    border-color: #2ecc71;
+}
+.form-outer.error input{
+    border-color: #e74c3c;
+}
+
+.form-outer.success textarea{
+    border-color: #2ecc71;
+}
+.form-outer.error textarea{
+    border-color: #e74c3c;
+}
+
+.form-outer.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-outer.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+
+.form-outer i{
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+    right: 10px;
+}
+.form-outer small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-outer.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form button{
+    background-color: #8e44ad;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+
+.contact-info{
+    
+    color: white;
+    text-align: center;
+    margin-top: 220px;
+    border: 3px solid purple;
+    
+    
+
+}
+.contact-info h1{
+    color: black;
+}
+
+.form-btn:hover{
+background-color: green;
+border: 1px solid black;
+
+}
+
+
+/* MEDIA */
+@media (max-width: 550px) {
+    .form-outer label{
+        display: none;
+        
+    }
+    .form-outer input{
+       margin-top: 20px;
+    }
+
+    .form-outer i{
+       top: 12px;
+    }
+}
+

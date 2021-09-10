@@ -1,0 +1,34 @@
+
+.accordion{
+padding-top: 80px ;
+}
+
+.outer-faq{
+    padding: 200px;
+}
+.faq-heading{
+    text-align: center;
+    font-weight: bold;
+}
+
+.accordion-button{
+    font-weight: bold;
+    color: #9453A6 !important;
+}
+
+
+@media (max-width:890px) {
+    .outer-faq,
+    .accordion{
+        width: 100% !important;
+        height: 100% !important;
+
+        
+        }
+    .outer-faq{
+        padding: 60px;
+    }
+    .faq-heading{
+        padding-top: 58px;
+    }
+}

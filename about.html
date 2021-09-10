@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>About page</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-bar">
+          
+         <nav class="navbar navbar-expand-lg navbar-light">
+            
+              <a href="index.html"> <img class="logo" src="./images/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.html">MERDI GRAS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  <a class="nav-link" href="media.html">Media</a>
+                  <a class="nav-link" href="faq.html">FAQ</a>
+                  <a class="nav-link" href="trivia.html">Trivia</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                  </div>
+              </div>
+            </div>
+          </nav>
+       
+          </div>
+       
+    
+      <section>
+        <!-- ABOUT THE PARADE -->
+       
+
+        
+        <div class="about">
+          <div class="parade">
+            <img class="about-image" src="./images/about-logo.jpg" alt="about">
+            <h1>About Mardi Gras in New Orleans</h1>
+            <p>The holiday of Mardi Gras is celebrated in all of Louisiana, including the city of New Orleans. Celebrations are concentrated for about two weeks before and through Shrove Tuesday, the day before Ash Wednesday (the start of lent in the Western Christian tradition). Usually there is one major parade each day (weather permitting); many days have several large parades. The largest and most elaborate parades take place the last five days of the Mardi Gras season. In the final week, many events occur throughout New Orleans and surrounding communities, including parades and balls (some of them masquerade balls).</p>
+            <button onclick="location.href='index.html'" type="button">Explore</button>
+          </div>
+          
+
+<!-- MAYOR -->
+          <div class="main">
+            <img src="./images/mayor.jpg" alt="mayor">
+            <div class="about-text">
+              <h1>About our mayor</h1>
+              <h5>Mayor LaToya Cantrell of New Orleans </h5>
+              <p>Cantrell was inaugurated as mayor on May 7, 2018, the first woman to hold the position in the city's history.[28] Once in office, she established a new Office of Youth and Families, with the goal of creating a strategic plan to address families in crisis in the city. Cantrell also founded a Gun Violence Reduction Council, tasked with finding solutions to violent crime.[29] Starting with a push to rededicate hotel taxes collected within the city for city use, Cantrell has focused on her #fairshare initiative to improve city infrastructure, public transportation, public parks, and green spaces.[30] As part of that initiative, in October 2018 the City of New Orleans filed a lawsuit against four opioid manufacturers and distributors.
+
+                </p>
+              <button onclick="location.href='contact.html'" type="button">Let's Talk</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    
+      <footer>
+        <div class="footer-content">
+        <img src="./images/logo.png" class="logo-big" alt="big logo">
+        
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-google"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+         
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+          <p>copyright &copy; 2021 designed by Joey Kraus</p>
+        </div>
+        </div>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="func.js"></script>
+    <script>
+      window.addEventListener("scroll",function(){
+   var header = this.document.querySelector(".header");
+   header.classList.toggle("sticky",window.scrollY > 0)
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    <link rel="stylesheet" href="./css//trivia.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-bar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            
+              <a href="index.html"> <img class="logo" src="./images/logo.png" alt="logo"></a>
+              <a class="navbar-brand" href="index.html">MARDI GRAS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  <a class="nav-link" href="media.html">Media</a>
+                  <a class="nav-link" href="faq.html">FAQ</a>
+                  <a class="nav-link" href="trivia.html">Trivia</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+          </div>
+<div class="trivia">
+
+
+<!-- start quiz -->
+<div class="start_btn"><button>Start Quiz</button></div>
+
+<!-- Info Box -->
+<div class="info_box">
+<div class="info_title">
+  <span>Some Rules of this Quiz</span>
+</div>
+<div class="info_list">
+  <div class="info">1. You will have only <span>15 seconds</span> per each question</div>
+  <div class="info"> 2. Once you select your answer, you can't reselect.</div>
+  <div class="info">3. You can't select any option once time goes off.</div>
+<div class="info">4. You can't exit from the Quiz while youre playing</div>
+<div class="info">5. You'll get points on the basis of your currect answers</div>
+
+</div>
+<div class="buttons">
+  <button class="quit">Exit Quiz</button>
+  <button class="restart">Continue</button>
+</div>
+</div>
+
+<!-- Quiz Box -->
+<div class="quiz_box">
+  <header>
+    <div class="Title">Awesome Quiz Application</div>
+    <div class="timer">
+      <div class="timer_text">Time left</div>
+      <div class="timer_sec">15</div>
+    </div>
+    <div class="time_line"></div>
+  </header>
+  <section>
+    <div class="que_text">
+      <!-- <span>What does HTML stand for?</span> -->
+    </div>
+    <div class="option_list">
+      <!-- <div class="option">
+        <span>Hyper Text Preproccessor</span>
+        <div class="icon tick"><i class="fa fa-check"></i></div>
+      </div>
+      <div class="option">
+        <span>Hyper Text Preproccessor</span>
+        <div class="icon cross"><i class="fa fa-times"></i></div>
+      </div>
+      <div class="option">
+        <span>Hyper Text Preproccessor</span>
+        <div class="icon cross"><i class="fa fa-times"></i></div>
+      </div>
+      <div class="option">
+        <span>Hyper Text Preproccessor</span>
+        
+      </div>
+      <div class="option">
+        <span>Hyper Text Preproccessor</span>
+        
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Quiz Box Footer -->
+  <div class="footer-box">
+    <div class="total_que">
+      <!-- <span><p>2</p>of <p>5</p>Quistions</span> -->
+    </div>
+    <button class="next_btn">Next Que</button>
+  </div>
+</div>
+
+<!-- Result Box -->
+<div class="result_box">
+  <div class="icon">
+    <i class="fa fa-trophy"></i>
+  </div>
+  <div class="complete_text">You've complited the Quiz! </div>
+  <div class="score_text">
+    <!-- <span>and sorry, You got only <p>2</p> out of <p>5</p></span> -->
+  </div>
+  <div class="buttons">
+    <button class="restart">Replay Quiz</button>
+    <button class="quit">Quit Quiz</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+          <script>
+            window.addEventListener("scroll",function(){
+         var header = this.document.querySelector(".header");
+         header.classList.toggle("sticky",window.scrollY > 0)
+     })
+          </script>
+          <script src="./js/quistions.js"></script>
+          <script src="./js/trivia.js"></script>
+          
+</body>
+</html>
